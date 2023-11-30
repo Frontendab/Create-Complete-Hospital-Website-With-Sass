@@ -1,0 +1,99 @@
+@import '../mixin/mixin';
+// TODO: ===>>>>> START SECTION SPECIALIST
+.specialists{
+    .people{
+        grid-gap: 45px;
+        display: grid;
+        margin-top: 20px;
+        @media #{$maxSmall}{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media #{$minSmall}{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media #{$minMedia}{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .main {
+            position: relative;
+            border-radius: 20px !important;
+            transition: all 1s ease;
+            &:hover{
+                box-shadow: none !important;
+                .img-specialists::before{
+                    border-radius: 1rem;
+                    left: 0%;
+                }
+                .social-media{
+                    visibility: unset;
+                }
+                #icon-whatssap{
+                    visibility: unset;
+                }
+            }
+            .img-specialists{ 
+                height: 25rem;
+                position: relative;
+                overflow: hidden;
+                border-radius: 1rem;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba($primary-color, .8),rgba($primary-color-variant, .8));
+                    border-radius: 50%;
+                    left: -100%;
+                    top: 0;
+                    transition: all 1s ease;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 20px !important;
+                }
+            }
+            .info{
+                padding: 16px !important;
+                h2{
+                    margin-top: 10px;
+                    font-size: 25px;
+                }
+            }
+            .social-media{
+                position: absolute;
+                right: 25px;
+                top: 35px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                visibility: hidden;
+                a{
+                    @include styleSocialMediaNormal;
+                &:hover{
+                    @include styleSocialMediaHover;
+                }
+                }
+            }
+            #icon-whatssap{
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 115px;
+                left: 50%;
+                transform: translate(-50%,0);
+                text-decoration: none;
+                color: $black-color;
+                font-size: 45px;
+                background: $success-color;
+                padding: 18px;
+                border-radius: 50%; 
+                visibility: hidden;
+                transition: all 200ms ease;
+                &:hover{
+                    bottom: 125px;
+                }           
+            }
+        }
+    }
+}
+// TODO: ===>>>>> END SECTION SPECIALIST

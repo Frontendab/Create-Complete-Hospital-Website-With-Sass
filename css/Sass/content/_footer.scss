@@ -1,0 +1,47 @@
+@import '../mixin/mixin';
+// TODO: ===>>>>> START SECTION FOOTER
+footer{
+    background: $noBlack !important;
+    .col-lg-3{
+       & > h2{
+            font-size: 26px;
+            letter-spacing: 2px;
+            color: $white-color;
+        }
+        p{
+            font-family: $Tajawal;
+            margin-top: 17px;
+            font-size: 15px;
+            color: $colorPfooter;
+            a{
+                color: $colorPfooter !important;
+            }
+        }
+        .getAppointment{
+            background: $bgBtnGetAppointment !important;
+        }
+        .social-media{
+            margin-top: 25px !important;
+            a{
+                @include styleSocialMediaNormal;
+                padding-left: 13px;
+                padding-right: 13px;
+                display: inline;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:nth-child(3){
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                &:hover{
+                    @include styleSocialMediaHover;
+                }
+                margin: 0 5px;
+
+            }
+        }
+    }
+}
+// TODO: ===>>>>> END SECTION FOOTER
+

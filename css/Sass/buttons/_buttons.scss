@@ -1,0 +1,10 @@
+.makeAppointment {
+    font-size: 20px;
+    background: #f72585 !important;
+    border: 0;
+    border-radius: 7px;
+    @media #{$maxMedia}{
+        margin: 7px 42px;
+        margin-bottom: 23px;                
+    }
+}

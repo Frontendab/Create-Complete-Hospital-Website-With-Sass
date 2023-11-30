@@ -1,0 +1,58 @@
+@import '../mixin/mixin';
+// TODO: ===>>>>> START SECTION SERVICES
+.wapper{
+    background: $bgSections;
+    .services{
+    @include bodySections;
+    & > .parentSection{
+        @include parentTitle;
+        & > .title{
+            @include title;
+            @media #{$maxSmall}{
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                font-size: 35px !important;
+            }
+        }
+        & > p{
+            width: 70%;
+            font-size: 20px;
+        }
+    }
+    .parent-box-services{
+        margin-top: 15px;
+        grid-gap: 25px;
+        display: grid;
+        @media #{$maxSmall}{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media #{$minSmall}{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media #{$minMedia}{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .elBox{
+            @include styeBox;
+            padding: 30px;
+            padding-bottom: 25px;
+            &:hover{
+                transform: translateY(-10px);
+            }
+            div{
+                padding: 0 18px;
+                line-height: 1.9;
+            }
+            h1{
+                @media #{$minSmall}{
+                    font-size: 25px;
+                }
+                @media #{$minLarge}{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+}
+// TODO: ===>>>>> END SECTION SERVICES

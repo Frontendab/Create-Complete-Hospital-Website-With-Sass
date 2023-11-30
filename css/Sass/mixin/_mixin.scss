@@ -1,0 +1,41 @@
+// *** YOUR CAN USED THIS STYLE FOR ANY SECTION
+@mixin bodySections{
+    width: 100%;
+    height: fit-content;
+}
+
+// *** YOUR CAN USED THIS STYLE FOR CENTER ANY TITLE
+@mixin parentTitle {
+    display: grid;
+    place-items: center;
+}
+@mixin title{
+    padding: 55px 25px;
+    font-size: 45px;
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 30px;
+}
+// *** STYLE ALL BOX IT HAS THE SAME STYLE
+@mixin styeBox {
+    background: linear-gradient(to $text-right, $primary-color, $primary-color-variant);
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: .6s;
+}
+// *** STYLE TAG <A></A> FOR SOCIAL MEDIA 
+@mixin styleSocialMediaNormal{
+    background: $white-color;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: $black-color;
+    transition: all 200ms ease;
+}
+@mixin styleSocialMediaHover{
+    background: $black-color;
+    color: $white-color;
+}

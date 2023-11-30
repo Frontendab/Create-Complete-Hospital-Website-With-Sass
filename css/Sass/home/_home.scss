@@ -1,0 +1,64 @@
+// ** -- IMPORT FILE ANIMATIONS
+@import './css/Sass/animations/animations';
+// -------------------------------------------
+.home{
+    @media #{$minSmall}{
+        height: 115vh !important;
+        margin-top: 10%;
+    }
+    @media #{$minMedia}{
+        height: 100vh !important;
+        margin-top: 0;
+    }
+}
+.wapperHome,
+CENTER{
+    position: relative;
+    transform: translateY(100px);
+    height: 100vh;
+    transform: translateY(145px);
+    .row{
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        top: 45%;
+        transform: translateY(-50%);
+        @media #{$minLarge}{
+            top: 41% !important;
+        }
+        & > .col-lg-6{
+            div {
+                position: relative;
+                top: 30%;
+                transform: translateY(-30%);
+                h1{
+                    margin-bottom: 12px;
+                    font-family: $Tajawal;
+                    @media #{$maxLarge}{
+                        font-size: 52px !important;
+                    }
+                    @media #{$minLarge}{
+                        font-size: 62px !important;
+                    }
+                }
+                p{
+                    margin-bottom: 38px;
+                    @media #{$maxLarge}{
+                        font-size: 14px !important;
+                    }
+                    @media #{$minLarge}{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+//*** - ANIMATIONS YOU NEED CHANGE START 
+// * DEGREE FOR DIVIMG WITH START DEGREE FOR CONTENTTEXT
+// * IN FILE RTL
+
+@include SlideInRight(divImg,100%,0%);
+@include SlideInRight(contentText,-100%,0%);
+
+

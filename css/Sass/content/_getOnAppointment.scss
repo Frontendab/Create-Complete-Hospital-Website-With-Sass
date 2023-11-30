@@ -1,0 +1,47 @@
+@import '../mixin/mixin';
+// TODO: ===>>>>> START SECTION GET ON APPOINTMENT
+.getOnAppointment{
+    .des{
+        font-size: 17px;
+    }
+    p{
+        font-family: $Tajawal;
+    }
+    .info-appointment{
+        display: flex;
+        gap: 40px;
+        margin-top: 55px;
+        &:not(.one){
+            margin-top: 27px;
+        }
+        h4{
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        i{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            font-size: 25px;
+            background: $secondary-color;
+            padding: 17px;
+            border-radius: 50%;
+            color: #fff;
+        }
+    }
+    .second{
+        margin-top: 20px;
+        .element{
+            margin: 20px;
+            label{
+                font-size: 15px;
+            }
+            .btn{
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+// TODO: ===>>>>> END SECTION GET ON APPOINTMENT

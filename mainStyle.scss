@@ -1,0 +1,23 @@
+
+// ** -- IMPORT FONT FAMILY FROM GOOGLE
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+// ** -- IMPORT FONT FAMILY FROM GOOGLE STYLE WEAK
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Tajawal:wght@300&display=swap');
+// ** -- IMPORT FILE VARIABLES
+@import './css/Sass/variables/variables';
+// ** -- IMPORT FILE buttons
+@import './css/Sass/buttons/buttons';
+// ** -- IMPORT FILE NAVBAR
+@import './css/Sass/nav/navBar';
+// ** -- IMPORT FILE HOME
+@import './css/Sass/home/home';
+// ** -- IMPORT FILE SERVICES
+@import './css/Sass/content/service';
+// ** -- IMPORT FILE SPECIALISTS
+@import './css/Sass/content/specialists';
+// ** -- IMPORT FILE TESTIMONIALS
+@import './css/Sass/content/testimonials';
+// ** -- IMPORT FILE GET ON APPOINTMENT
+@import './css/Sass/content/getOnAppointment';
+// ** -- IMPORT FILE FOOTER
+@import './css/Sass/content/footer';
